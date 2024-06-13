@@ -1,38 +1,91 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.win {
+  animation: blinker 1s ease-in-out infinite;
+  font-size: 60px;
+  font-weight: bolder;
+  background-clip: text;
+  background-image: radial-gradient(circle,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red);
+  color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes blinker {
+  50% {
+    opacity: 0.9;
+    background-image: linear-gradient(yellow,
+        red,
+        indigo,
+        violet,
+        green,
+        orange,
+        blue);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.again {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #538fbe;
+  padding: 20px 70px;
+  font-size: 24px;
+  border: 1px solid #2d6898;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  font-family: sans-serif;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.win {
+  animation: blinker 1s ease-in-out infinite;
+  font-size: 60px;
+  font-weight: bolder;
+  background-clip: text;
+  background-image: radial-gradient(circle,
+      violet,
+      indigo,
+      blue,
+      green,
+      yellow,
+      orange,
+      red);
+  color: transparent;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.9;
+    background-image: linear-gradient(yellow,
+        red,
+        indigo,
+        violet,
+        green,
+        orange,
+        blue);
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.again {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  background-color: #538fbe;
+  padding: 20px 70px;
+  font-size: 24px;
+  border: 1px solid #2d6898;
 }
